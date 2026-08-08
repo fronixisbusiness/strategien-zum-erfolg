@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="google-adsense-account" content="ca-pub-8219956801967304">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <title>KI & digitale Tools 2026: Praktischer Einstieg für Anfänger | Strategien zum Erfolg</title>
+
+  <meta name="description" content="KI und digitale Tools sinnvoll nutzen: verständlicher Einstieg in KI-Assistenten, Recherche, Bilder, Video, Automatisierung und produktive Workflows.">
+
+  <meta name="robots" content="index, follow">
+
+  <style>
+    :root {
+      --bg: #171018;
+      --bg-soft: #211622;
+      --plum: #6B3D5E;
+      --cream: #F5EFE6;
+      --cream-soft: #E8DED0;
+      --gold: #C9A96E;
+      --gold-light: #E4C991;
+      --text-muted: #BBAEB8;
+      --border: rgba(201, 169, 110, 0.22);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--cream);
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(23, 16, 24, 0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      white-space: nowrap;
+    }
+
+    .brand img {
+      width: 76px;
+      height: auto;
+      display: block;
+    }
+
+    .brand-name {
+      font-family: Georgia, serif;
+      font-size: 1.05rem;
+      letter-spacing: 0.08em;
+      color: var(--cream);
+    }
+
+    .brand-name strong {
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 0.92rem;
+      color: #DED4DC;
+    }
+
+    nav a:hover {
+      color: var(--gold-light);
+    }
+
+    .nav-cta {
+      padding: 10px 17px;
+      border: 1px solid var(--gold);
+      border-radius: 999px;
+      color: var(--gold-light);
+    }
+
+    /* HERO */
+
+    .article-hero {
+      padding: 105px 0 80px;
+      background:
+        radial-gradient(circle at 80% 15%, rgba(107,61,94,.5), transparent 35%),
+        linear-gradient(135deg, #171018 0%, #291A2A 60%, #351F31 100%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .breadcrumb {
+      margin-bottom: 28px;
+      color: var(--gold-light);
+      font-size: .82rem;
+    }
+
+    .category {
+      display: inline-block;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-weight: 700;
+      font-size: .74rem;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      max-width: 900px;
+      font-family: Georgia, serif;
+      font-size: clamp(2.7rem, 6vw, 5.5rem);
+      font-weight: 400;
+      line-height: 1.04;
+      letter-spacing: -.035em;
+    }
+
+    h1 span {
+      color: var(--gold);
+    }
+
+    .lead {
+      max-width: 780px;
+      margin-top: 30px;
+      color: #D2C6CF;
+      font-size: 1.13rem;
+      line-height: 1.8;
+    }
+
+    .article-meta {
+      margin-top: 34px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      color: #A99DA7;
+      font-size: .82rem;
+    }
+
+    /* CONTENT */
+
+    .article-layout {
+      background: var(--cream);
+      color: #31252E;
+      padding: 85px 0 110px;
+    }
+
+    .content {
+      width: min(820px, 100%);
+      margin: 0 auto;
+    }
+
+    .content h2 {
+      margin-top: 70px;
+      margin-bottom: 22px;
+      font-family: Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.16;
+      color: #291D26;
+    }
+
+    .content h3 {
+      margin-top: 35px;
+      margin-bottom: 14px;
+      font-family: Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #382A34;
+    }
+
+    .content p {
+      margin-bottom: 21px;
+      color: #665A63;
+      font-size: 1.02rem;
+    }
+
+    .content strong {
+      color: #30232C;
+    }
+
+    ul {
+      margin: 15px 0 25px 22px;
+      color: #665A63;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .intro-box,
+    .tip-box,
+    .warning-box {
+      margin: 38px 0;
+      padding: 28px 30px;
+      border-left: 4px solid var(--gold);
+      background: #FFF9F1;
+    }
+
+    .intro-box strong,
+    .tip-box strong,
+    .warning-box strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--plum);
+    }
+
+    /* TOOL CATEGORIES */
+
+    .tool-category {
+      margin-top: 45px;
+      padding: 34px;
+      border: 1px solid #DED2C5;
+      background: #FFFDF9;
+    }
+
+    .tool-number {
+      color: var(--plum);
+      font-weight: 750;
+      font-size: .8rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+
+    .tool-category h2 {
+      margin-top: 0;
+    }
+
+    .facts {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .fact {
+      background: #F3EBE2;
+      padding: 17px;
+    }
+
+    .fact span {
+      display: block;
+      color: var(--plum);
+      font-size: .72rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-weight: 700;
+    }
+
+    .fact strong {
+      display: block;
+      margin-top: 5px;
+      font-size: .94rem;
+    }
+
+    /* WORKFLOW */
+
+    .workflow {
+      margin: 35px 0;
+      padding: 32px;
+      background: #251825;
+      color: var(--cream);
+    }
+
+    .workflow h3 {
+      color: var(--gold-light);
+      margin-top: 0;
+    }
+
+    .workflow p {
+      color: #CFC2CB;
+    }
+
+    .workflow-step {
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    .workflow-step:last-child {
+      border-bottom: 0;
+    }
+
+    .workflow-step strong {
+      color: var(--gold-light);
+    }
+
+    /* TABLE */
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 35px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 700px;
+      background: #FFFDF9;
+    }
+
+    th,
+    td {
+      padding: 17px 15px;
+      text-align: left;
+      border-bottom: 1px solid #DED3C7;
+      font-size: .9rem;
+    }
+
+    th {
+      background: #EDE3D9;
+      color: var(--plum);
+    }
+
+    /* DAYS */
+
+    .days {
+      display: grid;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .day {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 20px;
+      padding: 22px;
+      background: #FFFDF9;
+      border: 1px solid #DED2C5;
+    }
+
+    .day-number {
+      color: var(--gold);
+      font-family: Georgia, serif;
+      font-size: 1.5rem;
+    }
+
+    /* FAQ */
+
+    .faq {
+      margin-top: 28px;
+      border-top: 1px solid #D9CDC1;
+    }
+
+    .faq-item {
+      padding: 26px 0;
+      border-bottom: 1px solid #D9CDC1;
+    }
+
+    .faq-item h3 {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+    }
+
+    /* CTA */
+
+    .final-cta {
+      margin-top: 75px;
+      padding: 50px;
+      background: #251825;
+      color: var(--cream);
+    }
+
+    .final-cta h2 {
+      color: var(--cream);
+      margin-top: 0;
+    }
+
+    .final-cta p {
+      color: #C7BAC4;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 14px 22px;
+      background: var(--gold);
+      color: #211720;
+      font-weight: 700;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #100B11;
+      padding: 55px 0 35px;
+      border-top: 1px solid var(--border);
+      color: #9F939C;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 35px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand {
+      font-family: Georgia, serif;
+      color: var(--cream);
+      font-size: 1.3rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      font-size: .84rem;
+    }
+
+    .copyright {
+      padding-top: 23px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      font-size: .76rem;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 768px) {
+
+      .nav {
+        min-height: 72px;
+      }
+
+      .brand {
+        gap: 10px;
+      }
+
+      .brand img {
+        width: 60px;
+      }
+
+      .brand-name {
+        font-size: .88rem;
+        letter-spacing: .05em;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .article-hero {
+        padding: 80px 0 65px;
+      }
+
+      .facts {
+        grid-template-columns: 1fr;
+      }
+
+      .tool-category {
+        padding: 25px;
+      }
+
+      .day {
+        grid-template-columns: 1fr;
+      }
+
+      .final-cta {
+        padding: 34px 26px;
+      }
+
+      .footer-top {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Strategien zum Erfolg">
+
+      <span class="brand-name">
+        STRATEGIEN <strong>ZUM ERFOLG</strong>
+      </span>
+    </a>
+
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="index.html#themen">Themen</a>
+      <a href="index.html#wissen">Wissen</a>
+      <a href="index.html#ueber">Über</a>
+      <a href="index.html#newsletter" class="nav-cta">Newsletter</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+
+<section class="article-hero">
+
+  <div class="container">
+
+    <div class="breadcrumb">
+      <a href="index.html">Startseite</a> → KI & digitale Tools
+    </div>
+
+    <span class="category">KI & digitale Tools</span>
+
+    <h1>
+      KI & digitale Tools:
+      <span>der praktische Einstieg 2026</span>
+    </h1>
+
+    <p class="lead">
+      Künstliche Intelligenz kann Recherche beschleunigen, Ideen entwickeln,
+      Inhalte strukturieren, Bilder und Videos unterstützen und wiederkehrende
+      Aufgaben automatisieren. Entscheidend ist aber nicht, möglichst viele
+      Tools zu besitzen – sondern die richtigen Werkzeuge sinnvoll miteinander
+      zu kombinieren.
+    </p>
+
+    <div class="article-meta">
+      <span>Aktualisiert: August 2026</span>
+      <span>Für Anfänger geeignet</span>
+      <span>Praxisorientierter Guide</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="article-layout">
+
+<div class="container">
+<article class="content">
+
+  <div class="intro-box">
+    <strong>Die wichtigste Regel</strong>
+    Ein neues KI-Tool ist nicht automatisch produktiver als dein bisheriger
+    Workflow. Beginne mit einem konkreten Problem und suche anschließend das
+    passende Werkzeug – nicht umgekehrt.
+  </div>
+
+
+  <h2>Was können KI-Tools heute sinnvoll übernehmen?</h2>
+
+  <p>
+    Moderne KI-Systeme können Texte analysieren, Informationen strukturieren,
+    Ideen entwickeln, Bilder erzeugen, Sprache verarbeiten, Daten auswerten
+    und bei vielen digitalen Arbeitsabläufen unterstützen.
+  </p>
+
+  <p>
+    Trotzdem sollte KI nicht als automatische Wahrheitsmaschine betrachtet
+    werden. Ergebnisse können unvollständig, veraltet oder falsch sein.
+    Besonders bei wichtigen Entscheidungen bleibt eine menschliche Prüfung
+    notwendig.
+  </p>
+
+
+  <!-- 1 -->
+
+  <section class="tool-category">
+
+    <div class="tool-number">Bereich 01</div>
+
+    <h2>KI-Assistenten für Text, Ideen und Planung</h2>
+
+    <p>
+      Allgemeine KI-Assistenten können beim Brainstorming, Strukturieren,
+      Zusammenfassen und Formulieren helfen. Sie eignen sich außerdem dazu,
+      komplizierte Themen verständlicher aufzubereiten oder aus einer groben
+      Idee einen konkreten Arbeitsplan zu entwickeln.
+    </p>
+
+    <h3>Typische Anwendungen</h3>
+
+    <ul>
+      <li>Ideen sammeln und sortieren</li>
+      <li>Gliederungen und Arbeitspläne erstellen</li>
+      <li>Texte überarbeiten</li>
+      <li>Informationen zusammenfassen</li>
+      <li>Varianten und Alternativen entwickeln</li>
+    </ul>
+
+    <div class="facts">
+      <div class="fact">
+        <span>Einstieg</span>
+        <strong>Einfach</strong>
+      </div>
+
+      <div class="fact">
+        <span>Nutzen</span>
+        <strong>Sehr vielseitig</strong>
+      </div>
+
+      <div class="fact">
+        <span>Kontrolle</span>
+        <strong>Immer erforderlich</strong>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- 2 -->
+
+  <section class="tool-category">
+
+    <div class="tool-number">Bereich 02</div>
+
+    <h2>KI für Recherche und Wissensarbeit</h2>
+
+    <p>
+      Recherche-Tools können große Informationsmengen schneller erschließen.
+      Besonders nützlich sind Systeme, die nachvollziehbare Quellen anzeigen
+      und den Nutzer direkt zum Originalmaterial führen.
+    </p>
+
+    <p>
+      Für wichtige Fakten sollte die Originalquelle trotzdem geöffnet und
+      geprüft werden. Eine überzeugend formulierte KI-Antwort ist noch kein
+      Beleg dafür, dass eine Information korrekt ist.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <span>Tempo</span>
+        <strong>Hoch</strong>
+      </div>
+
+      <div class="fact">
+        <span>Quellenprüfung</span>
+        <strong>Wichtig</strong>
+      </div>
+
+      <div class="fact">
+        <span>Geeignet für</span>
+        <strong>Wissensarbeit</strong>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- 3 -->
+
+  <section class="tool-category">
+
+    <div class="tool-number">Bereich 03</div>
+
+    <h2>KI-Bilder und digitales Design</h2>
+
+    <p>
+      Generative Bildsysteme können Illustrationen, Konzeptbilder,
+      Produktideen, Moodboards und kreative Entwürfe erzeugen.
+      Für Unternehmen und Creator kann das die frühe Konzeptphase erheblich
+      beschleunigen.
+    </p>
+
+    <p>
+      Gute Ergebnisse hängen jedoch stark von Beschreibung, Referenzen,
+      Nachbearbeitung und einem konsistenten visuellen Konzept ab.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <span>Kreativität</span>
+        <strong>Sehr hoch</strong>
+      </div>
+
+      <div class="fact">
+        <span>Lernkurve</span>
+        <strong>Mittel</strong>
+      </div>
+
+      <div class="fact">
+        <span>Wichtig</span>
+        <strong>Nutzungsrechte prüfen</strong>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- 4 -->
+
+  <section class="tool-category">
+
+    <div class="tool-number">Bereich 04</div>
+
+    <h2>KI-Video und Content-Produktion</h2>
+
+    <p>
+      KI kann bei Skripten, Storyboards, Untertiteln, Übersetzungen,
+      Schnittvorbereitung und zunehmend auch bei der eigentlichen
+      Videoerzeugung helfen.
+    </p>
+
+    <p>
+      Für Social Media bedeutet das vor allem: Aus einer einzigen Idee
+      können mehrere Formate entstehen, ohne jedes Mal bei null anzufangen.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <span>Potenzial</span>
+        <strong>Sehr hoch</strong>
+      </div>
+
+      <div class="fact">
+        <span>Entwicklung</span>
+        <strong>Sehr schnell</strong>
+      </div>
+
+      <div class="fact">
+        <span>Aufwand</span>
+        <strong>Je nach Qualität</strong>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- 5 -->
+
+  <section class="tool-category">
+
+    <div class="tool-number">Bereich 05</div>
+
+    <h2>Automatisierung</h2>
+
+    <p>
+      Automatisierungsplattformen verbinden verschiedene Anwendungen
+      miteinander. Dadurch können wiederkehrende Aufgaben automatisch
+      ausgelöst werden.
+    </p>
+
+    <p>
+      Ein Beispiel: Ein Formular wird ausgefüllt, die Daten werden gespeichert,
+      eine Benachrichtigung wird erstellt und anschließend eine vorbereitete
+      Folgeaktion gestartet.
+    </p>
+
+    <p>
+      KI kann innerhalb solcher Workflows beispielsweise Texte klassifizieren,
+      Informationen extrahieren oder Inhalte strukturieren.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <span>Zeitersparnis</span>
+        <strong>Potentiell hoch</strong>
+      </div>
+
+      <div class="fact">
+        <span>Einstieg</span>
+        <strong>Mittel</strong>
+      </div>
+
+      <div class="fact">
+        <span>Skalierung</span>
+        <strong>Sehr gut</strong>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- 6 -->
+
+  <section class="tool-category">
+
+    <div class="tool-number">Bereich 06</div>
+
+    <h2>Produktivität und Organisation</h2>
+
+    <p>
+      Nicht jedes nützliche digitale Werkzeug benötigt KI.
+      Aufgabenverwaltung, Kalender, Cloud-Speicher und Wissensdatenbanken
+      bilden häufig erst die Struktur, auf der gute KI-Workflows aufbauen.
+    </p>
+
+    <p>
+      Eine einfache Organisation, die konsequent genutzt wird, ist meist
+      wertvoller als zehn miteinander konkurrierende Produktivitäts-Apps.
+    </p>
+
+  </section>
+
+
+  <h2>Kostenlos starten oder direkt bezahlen?</h2>
+
+  <p>
+    Für Anfänger reichen kostenlose Tarife häufig aus, um einen Workflow
+    überhaupt erst zu testen. Ein kostenpflichtiges Abo lohnt sich eher,
+    wenn ein Tool regelmäßig genutzt wird und einen konkreten Zeit- oder
+    Qualitätsvorteil bringt.
+  </p>
+
+  <div class="tip-box">
+    <strong>Einfache Entscheidungsregel</strong>
+    Bezahle nicht für ein Tool, weil es interessant aussieht. Bezahle dafür,
+    wenn du weißt, welche wiederkehrende Aufgabe es besser oder schneller
+    erledigt als deine bisherige Lösung.
+  </div>
+
+
+  <h2>Ein sinnvoller KI-Workflow</h2>
+
+  <div class="workflow">
+
+    <h3>Beispiel: Einen hochwertigen Artikel vorbereiten</h3>
+
+    <div class="workflow-step">
+      <strong>1. Thema definieren</strong><br>
+      Zielgruppe, Suchintention und konkrete Frage bestimmen.
+    </div>
+
+    <div class="workflow-step">
+      <strong>2. Recherche</strong><br>
+      Informationen sammeln und wichtige Aussagen anhand zuverlässiger
+      Originalquellen prüfen.
+    </div>
+
+    <div class="workflow-step">
+      <strong>3. Struktur</strong><br>
+      KI für Gliederung, Gegenargumente und fehlende Perspektiven nutzen.
+    </div>
+
+    <div class="workflow-step">
+      <strong>4. Erstellung</strong><br>
+      Eigene Erkenntnisse, Beispiele und geprüfte Informationen zu einem
+      verständlichen Inhalt verbinden.
+    </div>
+
+    <div class="workflow-step">
+      <strong>5. Qualitätskontrolle</strong><br>
+      Fakten, Quellen, Sprache, Wiederholungen und tatsächlichen Nutzen prüfen.
+    </div>
+
+  </div>
+
+
+  <h2>Welche Tool-Kategorie brauchst du?</h2>
+
+  <div class="table-wrap">
+
+    <table>
+
+      <thead>
+        <tr>
+          <th>Aufgabe</th>
+          <th>Tool-Kategorie</th>
+          <th>KI notwendig?</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>Ideen & Texte</td>
+          <td>KI-Assistent</td>
+          <td>Oft hilfreich</td>
+        </tr>
+
+        <tr>
+          <td>Recherche</td>
+          <td>Recherche-/Suchtool</td>
+          <td>Hilfreich</td>
+        </tr>
+
+        <tr>
+          <td>Grafiken</td>
+          <td>Design/Bildgenerator</td>
+          <td>Optional</td>
+        </tr>
+
+        <tr>
+          <td>Video</td>
+          <td>Video-/Editing-Tool</td>
+          <td>Optional bis hilfreich</td>
+        </tr>
+
+        <tr>
+          <td>Wiederkehrende Prozesse</td>
+          <td>Automation</td>
+          <td>Je nach Workflow</td>
+        </tr>
+
+        <tr>
+          <td>Aufgaben & Projekte</td>
+          <td>Produktivitätstool</td>
+          <td>Nicht zwingend</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+
+  <h2>Datenschutz und sensible Informationen</h2>
+
+  <p>
+    Bei KI-Diensten sollte vor der Nutzung geprüft werden, wie eingegebene
+    Daten verarbeitet werden. Besonders sensible personenbezogene,
+    vertrauliche oder geschäftliche Informationen gehören nicht ungeprüft
+    in externe KI-Systeme.
+  </p>
+
+  <div class="warning-box">
+    <strong>Grundregel</strong>
+    Gib keine vertraulichen Informationen in ein KI-System ein, bevor du
+    verstanden hast, wie der jeweilige Dienst diese Daten verarbeitet und
+    welche Einstellungen oder Vertragsbedingungen gelten.
+  </div>
+
+
+  <h2>7 Tage: Dein Einstieg in KI & digitale Tools</h2>
+
+  <div class="days">
+
+    <div class="day">
+      <div class="day-number">Tag 1</div>
+      <div>
+        <strong>Eine Aufgabe auswählen.</strong>
+        Suche eine wiederkehrende digitale Aufgabe, die aktuell Zeit kostet.
+      </div>
+    </div>
+
+    <div class="day">
+      <div class="day-number">Tag 2</div>
+      <div>
+        <strong>Ein Tool testen.</strong>
+        Nutze zunächst einen kostenlosen Tarif, wenn möglich.
+      </div>
+    </div>
+
+    <div class="day">
+      <div class="day-number">Tag 3</div>
+      <div>
+        <strong>Prompts verbessern.</strong>
+        Formuliere Ziel, Kontext, gewünschtes Ergebnis und Einschränkungen
+        möglichst eindeutig.
+      </div>
+    </div>
+
+    <div class="day">
+      <div class="day-number">Tag 4</div>
+      <div>
+        <strong>Ergebnisse kontrollieren.</strong>
+        Prüfe Fehler, Fakten und Qualität statt Ergebnisse blind zu übernehmen.
+      </div>
+    </div>
+
+    <div class="day">
+      <div class="day-number">Tag 5</div>
+      <div>
+        <strong>Workflow dokumentieren.</strong>
+        Schreibe die Schritte auf, die zuverlässig funktionieren.
+      </div>
+    </div>
+
+    <div class="day">
+      <div class="day-number">Tag 6</div>
+      <div>
+        <strong>Wiederholung testen.</strong>
+        Prüfe, ob der Workflow auch bei einer zweiten Aufgabe funktioniert.
+      </div>
+    </div>
+
+    <div class="day">
+      <div class="day-number">Tag 7</div>
+      <div>
+        <strong>Nutzen bewerten.</strong>
+        Hat das Tool tatsächlich Zeit gespart oder das Ergebnis verbessert?
+        Nur dann gehört es dauerhaft in deinen Workflow.
+      </div>
+    </div>
+
+  </div>
+
+
+  <h2>Häufige Fragen</h2>
+
+  <div class="faq">
+
+    <div class="faq-item">
+      <h3>Welches KI-Tool ist für Anfänger am besten?</h3>
+      <p>
+        Das hängt von der Aufgabe ab. Für den Einstieg ist ein vielseitiger
+        KI-Assistent oft sinnvoller als mehrere spezialisierte Dienste
+        gleichzeitig.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Muss ich für gute KI-Tools bezahlen?</h3>
+      <p>
+        Nicht unbedingt. Viele Dienste bieten kostenlose Einstiegsmöglichkeiten.
+        Ein kostenpflichtiger Tarif sollte einen konkreten zusätzlichen Nutzen
+        für deinen Workflow liefern.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Kann ich KI-Ergebnisse einfach übernehmen?</h3>
+      <p>
+        Das ist nicht empfehlenswert. Fakten, Quellen, Sprache und Kontext
+        sollten kontrolliert werden. Bei kreativen oder geschäftlichen
+        Anwendungen müssen außerdem die jeweiligen Nutzungsbedingungen
+        berücksichtigt werden.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Wird KI klassische Software ersetzen?</h3>
+      <p>
+        In vielen Bereichen wird KI eher Bestandteil bestehender Software
+        und Workflows. Aufgabenverwaltung, Datenbanken, Schnittprogramme
+        und andere spezialisierte Anwendungen bleiben deshalb weiterhin
+        relevant.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="final-cta">
+
+    <h2>Weniger Tools. Bessere Workflows.</h2>
+
+    <p>
+      Der größte Produktivitätssprung entsteht selten durch die zehnte neue
+      App. Beginne mit einem Problem, finde ein passendes Werkzeug und baue
+      daraus einen Workflow, den du tatsächlich regelmäßig verwendest.
+    </p>
+
+    <a href="index.html#themen" class="button">
+      Weitere Themen entdecken →
+    </a>
+
+  </div>
+
+</article>
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        Strategien zum Erfolg
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Startseite</a>
+        <a href="index.html#ueber">Über</a>
+        <a href="#">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Strategien zum Erfolg. Alle Rechte vorbehalten.
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
