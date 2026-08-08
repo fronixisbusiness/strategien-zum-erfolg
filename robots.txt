@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://strategien-zum-erfolg.de/sitemap.xml
