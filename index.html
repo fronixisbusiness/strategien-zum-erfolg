@@ -83,6 +83,22 @@
   height: auto;
   max-width: 100%;
 }
+
+    .brand-name {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  color: var(--cream);
+  white-space: nowrap;
+}
+
+.brand-name strong {
+  color: var(--gold);
+  font-weight: 600;
+}
     .brand span {
       color: var(--gold);
     }
@@ -702,8 +718,9 @@
 <header>
   <div class="container nav">
 
-    <a href="#" class="brand">
+   <a href="#" class="brand">
   <img src="logo.png" alt="Strategien zum Erfolg">
+  <span class="brand-name">STRATEGIEN <strong>ZUM ERFOLG</strong></span>
 </a>
 
     <nav>
