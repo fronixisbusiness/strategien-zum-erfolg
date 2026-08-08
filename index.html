@@ -713,6 +713,33 @@
         flex-direction: column;
       }
     }
+@media (max-width: 768px) {
+  .nav {
+    min-height: 72px;
+    gap: 10px;
+  }
+
+  .brand {
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .brand img {
+    width: 52px;
+    flex-shrink: 0;
+  }
+
+  .brand-name {
+    font-size: 0.88rem;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  nav {
+    display: none;
+  }
+}
+    
   </style>
 </head>
 
