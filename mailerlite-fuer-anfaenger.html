@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MailerLite für Anfänger: Newsletter & Automation Schritt für Schritt | Strategien zum Erfolg</title>
+
+  <meta name="description" content="MailerLite für Anfänger: So richtest du Newsletter, Formular, Gruppen und eine automatische E-Mail-Serie Schritt für Schritt ein.">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+    :root {
+      --bg: #171018;
+      --plum: #6B3D5E;
+      --cream: #F5EFE6;
+      --gold: #C9A96E;
+      --gold-light: #E4C991;
+      --text: #332932;
+      --muted: #6f646c;
+      --border: #ddd1c5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--cream);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    header {
+      background: rgba(23,16,24,.97);
+      border-bottom: 1px solid rgba(201,169,110,.2);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: bold;
+      letter-spacing: .06em;
+    }
+
+    .brand img {
+      width: 64px;
+    }
+
+    .brand strong {
+      color: var(--gold);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    nav a:hover {
+      color: var(--gold-light);
+    }
+
+    .hero {
+      padding: 95px 0 80px;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(107,61,94,.55), transparent 35%),
+        linear-gradient(135deg, #171018, #301d2d);
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-size: .78rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 400;
+      line-height: 1.04;
+      max-width: 950px;
+    }
+
+    h1 span {
+      color: var(--gold);
+    }
+
+    .lead {
+      max-width: 760px;
+      margin-top: 28px;
+      color: #d3c7cf;
+      font-size: 1.12rem;
+    }
+
+    .article {
+      background: var(--cream);
+      color: var(--text);
+      padding: 80px 0 100px;
+    }
+
+    .content {
+      width: min(820px, 100%);
+      margin: auto;
+    }
+
+    .content h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 62px 0 20px;
+      color: #2d2029;
+    }
+
+    .content h3 {
+      font-family: Georgia, serif;
+      font-size: 1.5rem;
+      color: var(--plum);
+      margin: 30px 0 12px;
+    }
+
+    .content p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .intro-box,
+    .tip {
+      background: #fffaf4;
+      border-left: 4px solid var(--gold);
+      padding: 25px;
+      margin: 32px 0;
+    }
+
+    .intro-box strong,
+    .tip strong {
+      display: block;
+      color: var(--plum);
+      margin-bottom: 6px;
+    }
+
+    .step {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 30px;
+      margin: 25px 0;
+    }
+
+    .step-number {
+      color: var(--gold);
+      font-size: .76rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    .step h3 {
+      margin-top: 8px;
+    }
+
+    .checklist {
+      margin: 18px 0 0 22px;
+      color: var(--muted);
+    }
+
+    .checklist li {
+      margin-bottom: 10px;
+    }
+
+    .example {
+      margin-top: 20px;
+      padding: 18px;
+      background: #f3ebe2;
+      border-radius: 8px;
+      color: #4c3c47;
+    }
+
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .box {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 24px;
+      border-radius: 12px;
+    }
+
+    .box h3 {
+      margin-top: 0;
+    }
+
+    .box ul {
+      margin-left: 20px;
+      color: var(--muted);
+    }
+
+    .box li {
+      margin-bottom: 9px;
+    }
+
+    .cta {
+      margin-top: 65px;
+      padding: 42px;
+      background: #251825;
+      color: var(--cream);
+      border-radius: 16px;
+    }
+
+    .cta h2 {
+      margin-top: 0;
+      color: var(--cream);
+    }
+
+    .cta p {
+      color: #d0c3cc;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--gold);
+      color: #211720;
+      padding: 14px 22px;
+      border-radius: 7px;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .related {
+      margin-top: 65px;
+    }
+
+    .related-links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .related-links a {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 16px;
+      color: var(--plum);
+      font-weight: bold;
+    }
+
+    footer {
+      background: #100b11;
+      color: #a99da6;
+      padding: 45px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        display: none;
+      }
+
+      .brand img {
+        width: 56px;
+      }
+
+      .hero {
+        padding: 70px 0 60px;
+      }
+
+      .pros-cons {
+        grid-template-columns: 1fr;
+      }
+
+      .cta {
+        padding: 28px 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Strategien zum Erfolg">
+      <span>STRATEGIEN <strong>ZUM ERFOLG</strong></span>
+    </a>
+
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="index.html#themen">Themen</a>
+      <a href="wissen.html">Wissen</a>
+      <a href="ueber-uns.html">Über</a>
+      <a href="index.html#gratisplan">Newsletter</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<section class="hero">
+  <div class="container">
+
+    <div class="eyebrow">
+      E-Mail-Marketing · Newsletter · Automation
+    </div>
+
+    <h1>
+      MailerLite für Anfänger:
+      <span>Newsletter Schritt für Schritt einrichten.</span>
+    </h1>
+
+    <p class="lead">
+      Von der ersten Abonnentengruppe bis zur automatischen E-Mail-Serie:
+      Hier lernst du, wie du mit MailerLite einen einfachen Newsletter-Funnel
+      aufbaust – ohne unnötig komplizierte Technik.
+    </p>
+
+  </div>
+</section>
+
+
+<main class="article">
+  <article class="container content">
+
+    <div class="intro-box">
+      <strong>Kurz erklärt</strong>
+      MailerLite ist eine Plattform für Newsletter, Formulare,
+      Landingpages und E-Mail-Automationen. Für Einsteiger ist besonders
+      interessant, dass sich einfache Funnels ohne Programmierkenntnisse
+      aufbauen lassen.
+    </div>
+
+
+    <h2>Was brauchst du für den Start?</h2>
+
+    <p>
+      Für einen einfachen Newsletter-Funnel brauchst du zunächst nicht viel:
+      eine Website oder Landingpage, eine E-Mail-Adresse und einen klaren Grund,
+      warum sich Besucher in deine Liste eintragen sollen.
+    </p>
+
+    <p>
+      Besonders gut funktioniert ein konkretes kostenloses Angebot,
+      beispielsweise eine Checkliste, ein Mini-Guide oder ein mehrtägiger
+      E-Mail-Kurs.
+    </p>
+
+
+    <section class="step">
+
+      <div class="step-number">Schritt 01</div>
+      <h3>MailerLite-Konto einrichten</h3>
+
+      <p>
+        Erstelle zunächst dein Konto und hinterlege deine geschäftlichen Angaben.
+        Achte darauf, dass deine Absenderdaten vollständig und professionell wirken.
+      </p>
+
+      <ul class="checklist">
+        <li>Unternehmens- oder Projektname festlegen</li>
+        <li>Absendernamen definieren</li>
+        <li>Absender-E-Mail-Adresse eintragen</li>
+        <li>Zeitzone und Standardsprache kontrollieren</li>
+      </ul>
+
+    </section>
+
+
+    <section class="step">
+
+      <div class="step-number">Schritt 02</div>
+      <h3>Eigene Absender-Domain authentifizieren</h3>
+
+      <p>
+        Eine eigene Domain wirkt professioneller und kann die Zustellbarkeit
+        deiner E-Mails verbessern.
+      </p>
+
+      <p>
+        MailerLite stellt dir dafür DNS-Einträge bereit, die du bei deinem
+        Domainanbieter oder DNS-Dienst hinterlegen kannst.
+      </p>
+
+      <div class="example">
+        Beispiel: Statt eines privaten Absenders wie
+        <strong>name@gmail.com</strong> nutzt du eine Adresse wie
+        <strong>kontakt@deine-domain.de</strong>.
+      </div>
+
+    </section>
+
+
+    <section class="step">
+
+      <div class="step-number">Schritt 03</div>
+      <h3>Eine Gruppe für neue Abonnenten erstellen</h3>
+
+      <p>
+        Gruppen helfen dir dabei, Abonnenten sauber zu organisieren.
+        Für jedes größere Freebie oder Thema kann eine eigene Gruppe sinnvoll sein.
+      </p>
+
+      <div class="example">
+        Beispiel:
+        <strong>7-Tage-Erfolgsplan – Newsletter</strong>
+      </div>
+
+    </section>
+
+
+    <section class="step">
+
+      <div class="step-number">Schritt 04</div>
+      <h3>Anmeldeformular erstellen</h3>
+
+      <p>
+        Jetzt erstellst du das Formular, über das Besucher ihre E-Mail-Adresse
+        hinterlassen können.
+      </p>
+
+      <ul class="checklist">
+        <li>Klare Überschrift</li>
+        <li>Kurze Nutzenbeschreibung</li>
+        <li>E-Mail-Feld</li>
+        <li>Einwilligungs-Checkbox</li>
+        <li>Klare Handlungsaufforderung</li>
+      </ul>
+
+      <div class="example">
+        Statt „Newsletter abonnieren“ ist ein konkreter CTA häufig stärker:
+        <strong>„7-Tage-Erfolgsplan starten“</strong>.
+      </div>
+
+    </section>
+
+
+    <section class="step">
+
+      <div class="step-number">Schritt 05</div>
+      <h3>Double-Opt-in aktivieren</h3>
+
+      <p>
+        Beim Double-Opt-in bestätigt der neue Abonnent seine E-Mail-Adresse
+        zunächst über eine Bestätigungsmail.
+      </p>
+
+      <p>
+        Erst danach wird die Adresse vollständig für den Newsletter freigegeben.
+      </p>
+
+    </section>
+
+
+    <section class="step">
+
+      <div class="step-number">Schritt 06</div>
+      <h3>Automation erstellen</h3>
+
+      <p>
+        Jetzt wird aus einem einfachen Newsletter ein automatisierter Funnel.
+      </p>
+
+      <p>
+        Als Auslöser kannst du beispielsweise festlegen:
+      </p>
+
+      <div class="example">
+        <strong>Wenn ein Abonnent einer bestimmten Gruppe beitritt → E-Mail senden.</strong>
+      </div>
+
+      <p>
+        Danach kannst du weitere E-Mails und Zeitverzögerungen ergänzen.
+      </p>
+
+    </section>
+
+
+    <section class="step">
+
+      <div class="step-number">Schritt 07</div>
+      <h3>Eine mehrtägige E-Mail-Serie aufbauen</h3>
+
+      <p>
+        Eine einfache Serie könnte beispielsweise so aussehen:
+      </p>
+
+      <ul class="checklist">
+        <li>Tag 1: Ausgangslage klären</li>
+        <li>Tag 2: Ziel konkretisieren</li>
+        <li>Tag 3: Hindernisse erkennen</li>
+        <li>Tag 4: nächsten Schritt festlegen</li>
+        <li>Tag 5: Routine aufbauen</li>
+        <li>Tag 6: Fortschritt messen</li>
+        <li>Tag 7: persönlichen Plan zusammenfassen</li>
+      </ul>
+
+      <p>
+        Zwischen den einzelnen E-Mails kannst du jeweils eine Verzögerung
+        von einem Tag setzen.
+      </p>
+
+    </section>
+
+
+    <section class="step">
+
+      <div class="step-number">Schritt 08</div>
+      <h3>Formular auf deiner Website einbauen</h3>
+
+      <p>
+        MailerLite stellt einen Embed-Code für Formulare bereit.
+        Diesen kannst du auf deiner Website an der gewünschten Stelle einfügen.
+      </p>
+
+      <p>
+        Wichtig ist, dass dein Haupt-CTA direkt zum Formular führt und der Besucher
+        nicht erst danach suchen muss.
+      </p>
+
+    </section>
+
+
+    <section class="step">
+
+      <div class="step-number">Schritt 09</div>
+      <h3>Alles selbst testen</h3>
+
+      <p>
+        Bevor du Besucher auf den Funnel schickst, solltest du den kompletten
+        Ablauf einmal selbst durchlaufen.
+      </p>
+
+      <ul class="checklist">
+        <li>Formular absenden</li>
+        <li>Double-Opt-in-Mail erhalten</li>
+        <li>E-Mail bestätigen</li>
+        <li>erste Automation-Mail erhalten</li>
+        <li>Darstellung auf dem Smartphone prüfen</li>
+        <li>Abmeldelink kontrollieren</li>
+      </ul>
+
+    </section>
+
+
+    <h2>Vorteile und Nachteile von MailerLite</h2>
+
+    <div class="pros-cons">
+
+      <div class="box">
+        <h3>Vorteile</h3>
+        <ul>
+          <li>Einsteigerfreundliche Oberfläche</li>
+          <li>Formulare und Automationen</li>
+          <li>Newsletter und Landingpages kombinierbar</li>
+          <li>Eigene Domain nutzbar</li>
+          <li>Gut für einfache Funnels geeignet</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Nachteile</h3>
+        <ul>
+          <li>Einige Funktionen sind tarifabhängig</li>
+          <li>Komplexere Automationen können schnell unübersichtlich werden</li>
+          <li>Manche Designoptionen sind eingeschränkt</li>
+          <li>Einrichtung von DNS und Domain kann für Anfänger ungewohnt sein</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <h2>Für wen eignet sich MailerLite?</h2>
+
+    <p>
+      MailerLite eignet sich besonders für Blogger, Content Creator,
+      kleine Unternehmen und Selbstständige, die ohne extrem komplexes
+      System mit E-Mail-Marketing beginnen möchten.
+    </p>
+
+    <p>
+      Für einen einfachen Funnel aus Website, Freebie, Newsletter
+      und automatischer E-Mail-Serie bietet die Plattform bereits viele
+      der wichtigsten Funktionen an einem Ort.
+    </p>
+
+
+    <div class="tip">
+      <strong>Wichtig:</strong>
+      Das Tool allein bringt keine Abonnenten. Entscheidend ist,
+      ob dein kostenloses Angebot ein echtes Problem löst und
+      Besucher einen klaren Grund haben, ihre E-Mail-Adresse einzutragen.
+    </div>
+
+
+    <section class="cta">
+
+      <h2>Du willst einen Funnel selbst ausprobieren?</h2>
+
+      <p>
+        Mit dem kostenlosen 7-Tage-Erfolgsplan kannst du dir gleichzeitig ansehen,
+        wie eine einfache automatisierte E-Mail-Serie in der Praxis funktioniert.
+      </p>
+
+      <a href="index.html#gratisplan" class="button">
+        7-Tage-Erfolgsplan kostenlos starten →
+      </a>
+
+    </section>
+
+
+    <section class="related">
+
+      <h2>Passend dazu</h2>
+
+      <div class="related-links">
+
+        <a href="online-geld-verdienen.html">
+          Online Geld verdienen: realistische Möglichkeiten →
+        </a>
+
+        <a href="ki-digitale-tools.html">
+          KI & digitale Tools →
+        </a>
+
+        <a href="wissen.html">
+          Zur Wissensübersicht →
+        </a>
+
+      </div>
+
+    </section>
+
+  </article>
+</main>
+
+
+<footer>
+  <div class="container footer-inner">
+
+    <div>
+      © 2026 Strategien zum Erfolg
+    </div>
+
+    <div class="footer-links">
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
