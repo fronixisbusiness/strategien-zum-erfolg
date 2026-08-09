@@ -1,1 +1,356 @@
+<!DOCTYPE html>
+<html lang="de">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Wissen | Strategien zum Erfolg</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #120d13;
+      color: #f5efe6;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #171118;
+      border-bottom: 1px solid rgba(201,169,110,0.25);
+      padding: 20px 30px;
+    }
+
+    .header-inner {
+      max-width: 1150px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #c9a96e;
+      font-weight: bold;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #f5efe6;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #c9a96e;
+    }
+
+    .hero {
+      max-width: 1150px;
+      margin: auto;
+      padding: 90px 30px 60px;
+    }
+
+    .eyebrow {
+      color: #c9a96e;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(46px, 7vw, 84px);
+      line-height: 1.05;
+      max-width: 850px;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      color: #d8cfd6;
+      font-size: 18px;
+    }
+
+    main {
+      max-width: 1150px;
+      margin: auto;
+      padding: 20px 30px 100px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: #1d151e;
+      border: 1px solid rgba(201,169,110,0.22);
+      border-radius: 18px;
+      padding: 32px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #c9a96e;
+    }
+
+    .number {
+      color: #c9a96e;
+      font-size: 13px;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+
+    .card h2 {
+      font-family: Georgia, serif;
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+
+    .card p {
+      color: #cfc5cc;
+      margin-bottom: 22px;
+    }
+
+    .card a {
+      color: #c9a96e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .freebie {
+      margin-top: 60px;
+      background: #f5efe6;
+      color: #2b1d29;
+      border-radius: 18px;
+      padding: 40px;
+    }
+
+    .freebie h2 {
+      font-family: Georgia, serif;
+      font-size: 36px;
+      color: #6b3d5e;
+      margin-bottom: 14px;
+    }
+
+    .freebie p {
+      max-width: 700px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #6b3d5e;
+      color: white;
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    footer {
+      border-top: 1px solid rgba(201,169,110,0.2);
+      padding: 35px 30px;
+      color: #b9adb5;
+    }
+
+    .footer-inner {
+      max-width: 1150px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer a {
+      color: #b9adb5;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    @media (max-width: 760px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 60px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+
+    <a href="index.html" class="brand">
+      STRATEGIEN ZUM ERFOLG
+    </a>
+
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="index.html#themen">Themen</a>
+      <a href="wissen.html">Wissen</a>
+      <a href="ueber-uns.html">Über</a>
+      <a href="index.html#gratisplan">Newsletter</a>
+    </nav>
+
+  </div>
+</header>
+
+<section class="hero">
+
+  <div class="eyebrow">
+    Wissen · Strategien · digitale Möglichkeiten
+  </div>
+
+  <h1>
+    Wissen, das dich wirklich weiterbringt.
+  </h1>
+
+  <p>
+    Keine leeren Versprechen. Hier findest du verständliche Inhalte,
+    praktische Strategien und konkrete nächste Schritte rund um
+    digitales Einkommen, moderne Tools, finanzielle Entwicklung
+    und persönlichen Fortschritt.
+  </p>
+
+</section>
+
+<main>
+
+  <div class="grid">
+
+    <article class="card">
+      <div class="number">01</div>
+
+      <h2>Online Geld verdienen</h2>
+
+      <p>
+        Realistische Möglichkeiten für zusätzliches Einkommen,
+        digitale Geschäftsmodelle und langfristigen Aufbau.
+      </p>
+
+      <a href="online-geld-verdienen.html">
+        Inhalte entdecken →
+      </a>
+    </article>
+
+
+    <article class="card">
+      <div class="number">02</div>
+
+      <h2>KI & digitale Tools</h2>
+
+      <p>
+        Tools, KI-Anwendungen und Automatisierungen, die Zeit sparen
+        und digitale Arbeit effizienter machen.
+      </p>
+
+      <a href="ki-digitale-tools.html">
+        Inhalte entdecken →
+      </a>
+    </article>
+
+
+    <article class="card">
+      <div class="number">03</div>
+
+      <h2>Finanzen</h2>
+
+      <p>
+        Geld besser verstehen, Ausgaben strukturieren,
+        finanzielle Ziele setzen und langfristig mehr Freiheit aufbauen.
+      </p>
+
+      <a href="finanz-freiheit.html">
+        Inhalte entdecken →
+      </a>
+    </article>
+
+
+    <article class="card">
+      <div class="number">04</div>
+
+      <h2>Persönliche Entwicklung</h2>
+
+      <p>
+        Ziele, Gewohnheiten, Entscheidungen und Strategien,
+        mit denen du Schritt für Schritt vorankommst.
+      </p>
+
+      <a href="persoenliche-entwicklung.html">
+        Inhalte entdecken →
+      </a>
+    </article>
+
+  </div>
+
+
+  <section class="freebie">
+
+    <h2>
+      Du willst direkt anfangen?
+    </h2>
+
+    <p>
+      Mit dem kostenlosen 7-Tage-Erfolgsplan bringst du mehr Klarheit
+      in deine Ziele und entwickelst konkrete nächste Schritte.
+    </p>
+
+    <a href="index.html#gratisplan" class="button">
+      7-Tage-Erfolgsplan kostenlos starten →
+    </a>
+
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="footer-inner">
+
+    <div>
+      © 2026 Strategien zum Erfolg
+    </div>
+
+    <div>
+      <a href="index.html">Startseite</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
