@@ -1,165 +1,960 @@
-<a href="index.html" class="brand">
-  STRATEGIEN ZUM ERFOLG
-</a>
+<!DOCTYPE html>
+<html lang="de">
 
-<nav>
-  <a href="index.html">Start</a>
-  <a href="index.html#themen">Themen</a>
-  <a href="wissen.html">Wissen</a>
-  <a href="ueber-uns.html">Über</a>
-  <a href="index.html#gratisplan">Newsletter</a>
-</nav>
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Wissen | Strategien zum Erfolg</title>
+
+  <meta
+    name="description"
+    content="Praktisches Wissen zu Online-Einkommen, KI-Tools, Finanzen, persönlicher Entwicklung, E-Mail-Marketing und digitalen Strategien."
+  >
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+
+    :root {
+      --dark: #171018;
+      --dark-soft: #241824;
+      --plum: #6B3D5E;
+      --plum-dark: #4e2945;
+      --cream: #F5EFE6;
+      --cream-light: #fffaf4;
+      --gold: #C9A96E;
+      --gold-light: #e3cc9d;
+      --text: #342a32;
+      --muted: #756a72;
+      --border: #dfd3c7;
+    }
 
 
-<div class="grid">
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  <article class="card">
-    <div class="number">01</div>
 
-    <h2>Online Geld verdienen</h2>
+    html {
+      scroll-behavior: smooth;
+    }
 
-    <p>
-      Realistische Möglichkeiten für zusätzliches Einkommen,
-      digitale Geschäftsmodelle und langfristigen Aufbau.
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--dark);
+      color: var(--cream);
+      line-height: 1.65;
+    }
+
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    .container {
+      width: min(1160px, 90%);
+      margin: 0 auto;
+    }
+
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(23, 16, 24, 0.97);
+      border-bottom: 1px solid rgba(201, 169, 110, 0.22);
+      backdrop-filter: blur(10px);
+    }
+
+
+    .header-inner {
+      min-height: 78px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 30px;
+    }
+
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      font-size: 14px;
+    }
+
+
+    .brand img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+
+    .brand strong {
+      color: var(--gold);
+    }
+
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+
+    nav a {
+      font-size: 14px;
+      transition: 0.2s ease;
+    }
+
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+
+    .nav-cta {
+      border: 1px solid var(--gold);
+      border-radius: 999px;
+
+      padding: 9px 16px;
+
+      color: var(--gold);
+    }
+
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+
+      padding: 105px 0 95px;
+
+      background:
+        radial-gradient(
+          circle at 85% 20%,
+          rgba(107, 61, 94, 0.6),
+          transparent 35%
+        ),
+        radial-gradient(
+          circle at 20% 85%,
+          rgba(201, 169, 110, 0.08),
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          #171018,
+          #2a1828
+        );
+    }
+
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(201, 169, 110, 0.18) 1px,
+          transparent 1px
+        );
+
+      background-size: 35px 35px;
+
+      opacity: 0.12;
+      pointer-events: none;
+    }
+
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+    }
+
+
+    .eyebrow {
+      margin-bottom: 20px;
+
+      color: var(--gold);
+
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+
+    h1 {
+      max-width: 900px;
+
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: clamp(3rem, 7vw, 6rem);
+      font-weight: 400;
+      line-height: 1;
+
+      margin-bottom: 28px;
+    }
+
+
+    h1 span {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+
+    .hero-text {
+      max-width: 760px;
+
+      color: #d7cbd3;
+      font-size: 18px;
+    }
+
+
+    /* CONTENT */
+
+    main {
+      background: var(--cream);
+      color: var(--text);
+
+      padding: 85px 0 100px;
+    }
+
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 45px;
+    }
+
+
+    .section-label {
+      color: var(--plum);
+
+      font-size: 12px;
+      font-weight: 700;
+
+      text-transform: uppercase;
+      letter-spacing: 0.17em;
+
+      margin-bottom: 12px;
+    }
+
+
+    .section-title {
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-weight: 400;
+
+      line-height: 1.15;
+
+      margin-bottom: 15px;
+    }
+
+
+    .section-intro {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+
+    /* GRID */
+
+    .grid {
+      display: grid;
+
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      gap: 24px;
+    }
+
+
+    .card {
+      position: relative;
+
+      background: #ffffff;
+
+      border: 1px solid var(--border);
+      border-radius: 18px;
+
+      padding: 32px;
+
+      min-height: 285px;
+
+      display: flex;
+      flex-direction: column;
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+
+    .card:hover {
+      transform: translateY(-4px);
+
+      border-color: var(--gold);
+
+      box-shadow:
+        0 16px 35px rgba(45, 28, 42, 0.08);
+    }
+
+
+    .number {
+      color: var(--gold);
+
+      font-size: 13px;
+      font-weight: 700;
+
+      letter-spacing: 0.14em;
+
+      margin-bottom: 24px;
+    }
+
+
+    .card h2 {
+      font-family: Georgia, "Times New Roman", serif;
+
+      color: #2d2029;
+
+      font-size: 30px;
+      font-weight: 400;
+
+      line-height: 1.2;
+
+      margin-bottom: 16px;
+    }
+
+
+    .card p {
+      color: var(--muted);
+
+      margin-bottom: 26px;
+
+      flex-grow: 1;
+    }
+
+
+    .card a {
+      display: inline-flex;
+      align-items: center;
+
+      width: fit-content;
+
+      color: var(--plum);
+
+      font-weight: 700;
+
+      border-bottom: 1px solid var(--gold);
+
+      padding-bottom: 3px;
+
+      transition: 0.2s ease;
+    }
+
+
+    .card a:hover {
+      color: var(--plum-dark);
+      border-color: var(--plum);
+    }
+
+
+    /* FEATURED CARD */
+
+    .card.featured {
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #fff9f1
+        );
+
+      border: 1px solid var(--gold);
+    }
+
+
+    .badge {
+      display: inline-block;
+
+      width: fit-content;
+
+      margin-bottom: 14px;
+
+      padding: 5px 10px;
+
+      border-radius: 999px;
+
+      background: rgba(201, 169, 110, 0.17);
+
+      color: var(--plum);
+
+      font-size: 11px;
+      font-weight: 700;
+
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+
+    /* FREEBIE */
+
+    .freebie {
+      margin-top: 70px;
+
+      padding: 50px;
+
+      border-radius: 20px;
+
+      background:
+        radial-gradient(
+          circle at 90% 20%,
+          rgba(107, 61, 94, 0.55),
+          transparent 35%
+        ),
+        linear-gradient(
+          135deg,
+          #201420,
+          #321d30
+        );
+
+      color: var(--cream);
+    }
+
+
+    .freebie-label {
+      color: var(--gold);
+
+      text-transform: uppercase;
+      letter-spacing: 0.17em;
+
+      font-size: 12px;
+      font-weight: 700;
+
+      margin-bottom: 14px;
+    }
+
+
+    .freebie h2 {
+      max-width: 700px;
+
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 400;
+
+      margin-bottom: 16px;
+    }
+
+
+    .freebie p {
+      max-width: 700px;
+
+      color: #d8ccd4;
+
+      margin-bottom: 28px;
+    }
+
+
+    .button {
+      display: inline-block;
+
+      background: var(--gold);
+
+      color: #241824;
+
+      border-radius: 8px;
+
+      padding: 14px 22px;
+
+      font-weight: 700;
+
+      transition: 0.2s ease;
+    }
+
+
+    .button:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+
+    /* FOOTER */
+
+    footer {
+      background: #100a11;
+
+      border-top: 1px solid rgba(201, 169, 110, 0.18);
+
+      padding: 42px 0;
+
+      color: #b5a9b1;
+    }
+
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      flex-wrap: wrap;
+
+      gap: 20px;
+    }
+
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+
+      flex-wrap: wrap;
+    }
+
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .header-inner {
+        min-height: auto;
+
+        padding: 18px 0;
+
+        align-items: flex-start;
+      }
+
+
+      nav {
+        display: none;
+      }
+
+
+      .hero {
+        padding: 75px 0 70px;
+      }
+
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+
+      .card {
+        min-height: auto;
+      }
+
+
+      .freebie {
+        padding: 32px 25px;
+      }
+
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="container header-inner">
+
+    <a href="index.html" class="brand">
+
+      <img
+        src="logo.png"
+        alt="Strategien zum Erfolg Logo"
+      >
+
+      <span>
+        STRATEGIEN <strong>ZUM ERFOLG</strong>
+      </span>
+
+    </a>
+
+
+    <nav>
+
+      <a href="index.html">
+        Start
+      </a>
+
+      <a href="index.html#themen">
+        Themen
+      </a>
+
+      <a href="wissen.html">
+        Wissen
+      </a>
+
+      <a href="ueber-uns.html">
+        Über
+      </a>
+
+      <a
+        href="index.html#gratisplan"
+        class="nav-cta"
+      >
+        Newsletter
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="container hero-inner">
+
+    <div class="eyebrow">
+      Wissen · Strategien · digitale Möglichkeiten
+    </div>
+
+
+    <h1>
+      Wissen, das dich
+      <span>wirklich weiterbringt.</span>
+    </h1>
+
+
+    <p class="hero-text">
+      Verständliche Inhalte, praktische Strategien und konkrete
+      nächste Schritte rund um Online-Einkommen, KI, digitale Tools,
+      Finanzen, E-Mail-Marketing und persönliche Entwicklung.
     </p>
 
-    <a href="online-geld-verdienen.html">
-      Inhalte entdecken →
-    </a>
-  </article>
-
-
-  <article class="card">
-    <div class="number">02</div>
-
-    <h2>KI & digitale Tools</h2>
-
-    <p>
-      Tools, KI-Anwendungen und Automatisierungen, die Zeit sparen
-      und digitale Arbeit effizienter machen.
-    </p>
-
-    <a href="ki-digitale-tools.html">
-      Inhalte entdecken →
-    </a>
-  </article>
-
-
-  <article class="card">
-    <div class="number">03</div>
-
-    <h2>Finanzen</h2>
-
-    <p>
-      Geld besser verstehen, Ausgaben strukturieren,
-      finanzielle Ziele setzen und langfristig mehr Freiheit aufbauen.
-    </p>
-
-    <a href="finanzielle-freiheit.html">
-      Inhalte entdecken →
-    </a>
-  </article>
-
-
-  <article class="card">
-    <div class="number">04</div>
-
-    <h2>Persönliche Entwicklung</h2>
-
-    <p>
-      Ziele, Gewohnheiten, Entscheidungen und Strategien,
-      mit denen du Schritt für Schritt vorankommst.
-    </p>
-
-    <a href="persoenliche-entwicklung.html">
-      Inhalte entdecken →
-    </a>
-  </article>
-
-
-  <article class="card">
-    <div class="number">05</div>
-
-    <h2>MailerLite für Anfänger</h2>
-
-    <p>
-      Newsletter, Formulare und Automationen Schritt für Schritt
-      verständlich erklärt – inklusive praktischem Funnel-Aufbau.
-    </p>
-
-    <a href="mailerlite-fuer-anfaenger.html">
-      Guide lesen →
-    </a>
-  </article>
-
-
-  <article class="card">
-    <div class="number">06</div>
-
-    <h2>Die besten KI-Tools für Anfänger</h2>
-
-    <p>
-      10 praktische KI-Tools für Schreiben, Recherche, Design,
-      Automatisierung und digitale Projekte – verständlich erklärt.
-    </p>
-
-    <a href="beste-ki-tools-fuer-anfaenger.html">
-      Guide lesen →
-    </a>
-  </article>
-
-
-  <article class="card">
-    <div class="number">07</div>
-
-    <h2>Kostenlose KI-Tools für Anfänger</h2>
-
-    <p>
-      10 KI-Tools, mit denen du kostenlos starten kannst –
-      für Schreiben, Recherche, Design, Audio, Organisation
-      und Automatisierung.
-    </p>
-
-    <a href="kostenlose-ki-tools-fuer-anfaenger.html">
-      Guide lesen →
-    </a>
-  </article>
-
-</div>
-
-
-<section class="freebie">
-
-  <h2>
-    Du willst direkt anfangen?
-  </h2>
-
-  <p>
-    Mit dem kostenlosen 7-Tage-Erfolgsplan bringst du mehr Klarheit
-    in deine Ziele und entwickelst konkrete nächste Schritte.
-  </p>
-
-  <a href="index.html#gratisplan" class="button">
-    7-Tage-Erfolgsplan kostenlos starten →
-  </a>
+  </div>
 
 </section>
 
 
+<main>
+
+  <div class="container">
+
+
+    <div class="section-head">
+
+      <div class="section-label">
+        Themen entdecken
+      </div>
+
+
+      <h2 class="section-title">
+        Wähle den Bereich, der dich gerade weiterbringt.
+      </h2>
+
+
+      <p class="section-intro">
+        Du musst nicht alles gleichzeitig lernen.
+        Starte mit einem Thema, setze einen konkreten Schritt um
+        und baue darauf weiter auf.
+      </p>
+
+    </div>
+
+
+
+    <div class="grid">
+
+
+      <!-- 01 -->
+
+      <article class="card">
+
+        <div class="number">
+          01
+        </div>
+
+        <h2>
+          Online Geld verdienen
+        </h2>
+
+        <p>
+          Realistische Möglichkeiten für zusätzliches Einkommen,
+          digitale Geschäftsmodelle und langfristigen Aufbau.
+        </p>
+
+        <a href="online-geld-verdienen.html">
+          Inhalte entdecken →
+        </a>
+
+      </article>
+
+
+
+      <!-- 02 -->
+
+      <article class="card">
+
+        <div class="number">
+          02
+        </div>
+
+        <h2>
+          KI & digitale Tools
+        </h2>
+
+        <p>
+          Tools, KI-Anwendungen und Automatisierungen,
+          die Zeit sparen und digitale Arbeit effizienter machen.
+        </p>
+
+        <a href="ki-digitale-tools.html">
+          Inhalte entdecken →
+        </a>
+
+      </article>
+
+
+
+      <!-- 03 -->
+
+      <article class="card">
+
+        <div class="number">
+          03
+        </div>
+
+        <h2>
+          Finanzen
+        </h2>
+
+        <p>
+          Geld besser verstehen, Ausgaben strukturieren,
+          finanzielle Ziele setzen und langfristig mehr Freiheit aufbauen.
+        </p>
+
+        <a href="finanzielle-freiheit.html">
+          Inhalte entdecken →
+        </a>
+
+      </article>
+
+
+
+      <!-- 04 -->
+
+      <article class="card">
+
+        <div class="number">
+          04
+        </div>
+
+        <h2>
+          Persönliche Entwicklung
+        </h2>
+
+        <p>
+          Ziele, Gewohnheiten, Entscheidungen und Strategien,
+          mit denen du Schritt für Schritt vorankommst.
+        </p>
+
+        <a href="persoenliche-entwicklung.html">
+          Inhalte entdecken →
+        </a>
+
+      </article>
+
+
+
+      <!-- 05 -->
+
+      <article class="card">
+
+        <div class="number">
+          05
+        </div>
+
+        <h2>
+          MailerLite für Anfänger
+        </h2>
+
+        <p>
+          Newsletter, Formulare und Automationen Schritt für Schritt
+          verständlich erklärt – inklusive praktischem Funnel-Aufbau.
+        </p>
+
+        <a href="mailerlite-fuer-anfaenger.html">
+          Guide lesen →
+        </a>
+
+      </article>
+
+
+
+      <!-- 06 -->
+
+      <article class="card">
+
+        <div class="number">
+          06
+        </div>
+
+        <h2>
+          Die besten KI-Tools für Anfänger
+        </h2>
+
+        <p>
+          10 praktische KI-Tools für Schreiben, Recherche,
+          Design, Automatisierung und digitale Projekte –
+          verständlich erklärt.
+        </p>
+
+        <a href="beste-ki-tools-fuer-anfaenger.html">
+          Guide lesen →
+        </a>
+
+      </article>
+
+
+
+      <!-- 07 -->
+
+      <article class="card featured">
+
+        <div class="number">
+          07
+        </div>
+
+        <div class="badge">
+          Neuer Guide
+        </div>
+
+        <h2>
+          Kostenlose KI-Tools für Anfänger
+        </h2>
+
+        <p>
+          10 KI-Tools, mit denen du kostenlos starten kannst –
+          für Schreiben, Recherche, Design, Audio,
+          Organisation und Automatisierung.
+        </p>
+
+        <a href="kostenlose-ki-tools-fuer-anfaenger.html">
+          Kostenlosen KI-Guide lesen →
+        </a>
+
+      </article>
+
+
+    </div>
+
+
+
+    <section class="freebie">
+
+      <div class="freebie-label">
+        Dein kostenloser Einstieg
+      </div>
+
+
+      <h2>
+        Du willst nicht nur lesen, sondern wirklich anfangen?
+      </h2>
+
+
+      <p>
+        Mit dem kostenlosen 7-Tage-Erfolgsplan bringst du
+        mehr Klarheit in deine Ziele und entwickelst konkrete
+        nächste Schritte für deine Umsetzung.
+      </p>
+
+
+      <a
+        href="index.html#gratisplan"
+        class="button"
+      >
+        7-Tage-Erfolgsplan kostenlos starten →
+      </a>
+
+    </section>
+
+
+  </div>
+
+</main>
+
+
+
 <footer>
-  <div class="footer-inner">
+
+  <div class="container footer-inner">
+
 
     <div>
       © 2026 Strategien zum Erfolg
     </div>
 
-    <div>
-      <a href="index.html">Startseite</a>
-      <a href="ueber-uns.html">Über uns</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
+
+    <div class="footer-links">
+
+      <a href="index.html">
+        Startseite
+      </a>
+
+      <a href="ueber-uns.html">
+        Über uns
+      </a>
+
+      <a href="kontakt.html">
+        Kontakt
+      </a>
+
+      <a href="impressum.html">
+        Impressum
+      </a>
+
+      <a href="datenschutz.html">
+        Datenschutz
+      </a>
+
     </div>
 
+
   </div>
+
 </footer>
+
+
+</body>
+
+</html>
