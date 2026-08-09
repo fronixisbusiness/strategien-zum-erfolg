@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>10 KI-Tools für Anfänger 2026 – kostenlos starten | Strategien zum Erfolg</title>
+
+  <meta name="description" content="10 praktische KI-Tools für Anfänger 2026, mit denen du kostenlos starten kannst. Vergleich für Schreiben, Recherche, Design, Audio, Organisation und Automatisierung.">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+    :root {
+      --bg: #171018;
+      --plum: #6B3D5E;
+      --cream: #F5EFE6;
+      --gold: #C9A96E;
+      --gold-light: #E4C991;
+      --text: #332932;
+      --muted: #6f646c;
+      --border: #ddd1c5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--cream);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    header {
+      background: rgba(23, 16, 24, .97);
+      border-bottom: 1px solid rgba(201, 169, 110, .2);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: bold;
+      letter-spacing: .06em;
+    }
+
+    .brand img {
+      width: 64px;
+    }
+
+    .brand strong {
+      color: var(--gold);
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    nav a:hover {
+      color: var(--gold-light);
+    }
+
+    .hero {
+      padding: 95px 0 80px;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(107, 61, 94, .55), transparent 35%),
+        linear-gradient(135deg, #171018, #301d2d);
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-size: .78rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(2.8rem, 7vw, 5.4rem);
+      line-height: 1.04;
+      font-weight: 400;
+      max-width: 980px;
+    }
+
+    h1 span {
+      color: var(--gold);
+    }
+
+    .lead {
+      max-width: 780px;
+      margin-top: 28px;
+      color: #d3c7cf;
+      font-size: 1.12rem;
+    }
+
+    .article {
+      background: var(--cream);
+      color: var(--text);
+      padding: 80px 0 100px;
+    }
+
+    .content {
+      width: min(860px, 100%);
+      margin: auto;
+    }
+
+    .content h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 400;
+      color: #2d2029;
+      margin: 62px 0 20px;
+      line-height: 1.2;
+    }
+
+    .content h3 {
+      font-family: Georgia, serif;
+      font-size: 1.55rem;
+      color: var(--plum);
+      margin: 8px 0 12px;
+    }
+
+    .content p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .intro-box,
+    .tip {
+      background: #fffaf4;
+      border-left: 4px solid var(--gold);
+      padding: 25px;
+      margin: 32px 0;
+    }
+
+    .intro-box strong,
+    .tip strong {
+      display: block;
+      color: var(--plum);
+      margin-bottom: 6px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 30px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      min-width: 650px;
+    }
+
+    th,
+    td {
+      padding: 14px;
+      border: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--plum);
+      color: white;
+    }
+
+    .tool {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 30px;
+      margin: 25px 0;
+    }
+
+    .tool-number {
+      color: var(--gold);
+      font-size: .76rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .fact {
+      background: #f3ebe2;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .fact small {
+      display: block;
+      color: var(--plum);
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: .68rem;
+      margin-bottom: 4px;
+    }
+
+    .tool-link {
+      display: inline-block;
+      margin-top: 5px;
+      color: var(--plum);
+      font-weight: bold;
+      border-bottom: 1px solid var(--gold);
+    }
+
+    .tool-link:hover {
+      color: #43263b;
+    }
+
+    .warning {
+      font-size: .9rem;
+      background: #f7f0e8;
+      padding: 14px 16px;
+      border-radius: 8px;
+      margin-top: 14px;
+      color: #65555f;
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .choice {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 24px;
+      border-radius: 12px;
+    }
+
+    .choice strong {
+      color: var(--plum);
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .cta {
+      margin-top: 65px;
+      padding: 42px;
+      background: #251825;
+      color: var(--cream);
+      border-radius: 16px;
+    }
+
+    .cta h2 {
+      margin-top: 0;
+      color: var(--cream);
+    }
+
+    .cta p {
+      color: #d0c3cc;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--gold);
+      color: #211720;
+      padding: 14px 22px;
+      border-radius: 7px;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .related {
+      margin-top: 65px;
+    }
+
+    .related-links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .related-links a {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 16px;
+      color: var(--plum);
+      font-weight: bold;
+    }
+
+    footer {
+      background: #100b11;
+      color: #a99da6;
+      padding: 45px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        display: none;
+      }
+
+      .brand img {
+        width: 56px;
+      }
+
+      .hero {
+        padding: 70px 0 60px;
+      }
+
+      .facts,
+      .choice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta {
+        padding: 28px 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Strategien zum Erfolg">
+      <span>STRATEGIEN <strong>ZUM ERFOLG</strong></span>
+    </a>
+
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="index.html#themen">Themen</a>
+      <a href="wissen.html">Wissen</a>
+      <a href="ueber-uns.html">Über</a>
+      <a href="index.html#gratisplan">Newsletter</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<section class="hero">
+  <div class="container">
+
+    <div class="eyebrow">
+      KI · kostenlose Tools · Anfänger
+    </div>
+
+    <h1>
+      Die 10 besten KI-Tools für Anfänger 2026 –
+      <span>kostenlos starten.</span>
+    </h1>
+
+    <p class="lead">
+      Schreiben, recherchieren, Designs erstellen, Stimmen generieren
+      oder Prozesse automatisieren: Diese zehn Tools kannst du zunächst
+      kostenlos oder mit einem kostenlosen Einstieg ausprobieren.
+    </p>
+
+  </div>
+</section>
+
+
+<main class="article">
+<article class="container content">
+
+  <div class="intro-box">
+    <strong>Wichtig vor dem Start</strong>
+    „Kostenlos“ bedeutet bei KI-Tools häufig nicht unbegrenzt kostenlos.
+    Viele Anbieter arbeiten mit Free-Plänen, Nutzungslimits, Credits oder
+    eingeschränkten Funktionen. Deshalb zeigen wir dir nicht nur, was ein
+    Tool kann, sondern auch, wo der kostenlose Einstieg endet.
+  </div>
+
+
+  <h2>Die 10 KI-Tools im schnellen Vergleich</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Tool</th>
+          <th>Besonders gut für</th>
+          <th>Kostenlos starten?</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>ChatGPT</td>
+          <td>Texte, Ideen, Fragen, Planung</td>
+          <td>Ja, mit Limits</td>
+        </tr>
+
+        <tr>
+          <td>Claude</td>
+          <td>Schreiben, Dokumente, Struktur</td>
+          <td>Ja, mit Limits</td>
+        </tr>
+
+        <tr>
+          <td>Gemini</td>
+          <td>Allround-KI und Google-Workflows</td>
+          <td>Ja, mit Limits</td>
+        </tr>
+
+        <tr>
+          <td>Perplexity</td>
+          <td>Recherche und Quellen</td>
+          <td>Ja</td>
+        </tr>
+
+        <tr>
+          <td>Canva AI</td>
+          <td>Design und Social Media</td>
+          <td>Ja, begrenzte KI-Nutzung</td>
+        </tr>
+
+        <tr>
+          <td>Adobe Firefly</td>
+          <td>Bilder, Audio und kreative KI</td>
+          <td>Ja, begrenzte Generationen</td>
+        </tr>
+
+        <tr>
+          <td>Gamma</td>
+          <td>Präsentationen und Dokumente</td>
+          <td>Ja, Starter-Credits</td>
+        </tr>
+
+        <tr>
+          <td>ElevenLabs</td>
+          <td>KI-Stimmen und Audio</td>
+          <td>Ja, begrenzte Credits</td>
+        </tr>
+
+        <tr>
+          <td>Notion</td>
+          <td>Organisation und Wissensarbeit</td>
+          <td>Free-Plan, KI eingeschränkt</td>
+        </tr>
+
+        <tr>
+          <td>Zapier</td>
+          <td>Automatisierung</td>
+          <td>Ja, begrenzte Tasks</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <h2>Welche kostenlosen KI-Tools sind für Anfänger wirklich sinnvoll?</h2>
+
+
+  <section class="tool">
+
+    <div class="tool-number">Tool 01</div>
+
+    <h3>ChatGPT – der Allrounder für den Einstieg</h3>
+
+    <p>
+      ChatGPT eignet sich für viele alltägliche Aufgaben:
+      Ideen entwickeln, Texte strukturieren, Fragen erklären lassen,
+      Pläne erstellen oder Informationen zusammenfassen.
+    </p>
+
+    <p>
+      Für Anfänger ist ein vielseitiges Werkzeug oft sinnvoller als
+      direkt mehrere spezialisierte KI-Dienste parallel zu nutzen.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <small>Gut für</small>
+        Schreiben & Ideen
+      </div>
+
+      <div class="fact">
+        <small>Kostenlos</small>
+        Ja
+      </div>
+
+      <div class="fact">
+        <small>Grenze</small>
+        Nutzungslimits
+      </div>
+    </div>
+
+    <a class="tool-link" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">
+      ChatGPT ansehen →
+    </a>
+
+  </section>
+
+
+  <section class="tool">
+
+    <div class="tool-number">Tool 02</div>
+
+    <h3>Claude – stark bei Texten und Dokumenten</h3>
+
+    <p>
+      Claude ist ebenfalls ein allgemeiner KI-Assistent.
+      Besonders interessant ist das Tool für längere Texte,
+      Strukturierung, Zusammenfassungen und Dokumentarbeit.
+    </p>
+
+    <p>
+      Der kostenlose Plan eignet sich zum Ausprobieren,
+      ist aber hinsichtlich der Nutzung begrenzt.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <small>Gut für</small>
+        Texte & Dokumente
+      </div>
+
+      <div class="fact">
+        <small>Kostenlos</small>
+        Ja
+      </div>
+
+      <div class="fact">
+        <small>Grenze</small>
+        Begrenzte Nutzung
+      </div>
+    </div>
+
+    <a class="tool-link" href="https://claude.ai/" target="_blank" rel="noopener noreferrer">
+      Claude ansehen →
+    </a>
+
+  </section>
+
+
+  <section class="tool">
+
+    <div class="tool-number">Tool 03</div>
+
+    <h3>Gemini – Googles KI-Assistent</h3>
+
+    <p>
+      Gemini ist besonders interessant, wenn du bereits viele
+      Google-Dienste verwendest und eine KI für Recherche,
+      Schreiben und allgemeine Aufgaben ausprobieren möchtest.
+    </p>
+
+    <p>
+      Ein kostenloser Einstieg ist möglich. Höhere Limits und
+      bestimmte zusätzliche Funktionen gehören zu kostenpflichtigen
+      Google-AI-Plänen.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <small>Gut für</small>
+        Allgemeine KI-Aufgaben
+      </div>
+
+      <div class="fact">
+        <small>Kostenlos</small>
+        Ja
+      </div>
+
+      <div class="fact">
+        <small>Grenze</small>
+        Funktions- & Nutzungslimits
+      </div>
+    </div>
+
+    <a class="tool-link" href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">
+      Gemini ansehen →
+    </a>
+
+  </section>
+
+
+  <section class="tool">
+
+    <div class="tool-number">Tool 04</div>
+
+    <h3>Perplexity – KI-Recherche mit Quellen</h3>
+
+    <p>
+      Perplexity kombiniert KI-Antworten mit Websuche und
+      Quellenverweisen. Das macht es besonders praktisch,
+      wenn du Informationen für Artikel, Projekte oder
+      Entscheidungen recherchieren möchtest.
+    </p>
+
+    <p>
+      Auch hier gilt: Öffne wichtige Quellen selbst und
+      verlasse dich bei entscheidenden Informationen nicht
+      ausschließlich auf die Zusammenfassung der KI.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <small>Gut für</small>
+        Recherche
+      </div>
+
+      <div class="fact">
+        <small>Kostenlos</small>
+        Ja
+      </div>
+
+      <div class="fact">
+        <small>Grenze</small>
+        Pro-Funktionen limitiert
+      </div>
+    </div>
+
+    <a class="tool-link" href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer">
+      Perplexity ansehen →
+    </a>
+
+  </section>
+
+
+  <section class="tool">
+
+    <div class="tool-number">Tool 05</div>
+
+    <h3>Canva AI – Design und Content erstellen</h3>
+
+    <p>
+      Canva verbindet klassische Designwerkzeuge mit KI-Funktionen.
+      Dadurch kannst du Social-Media-Grafiken, Präsentationen,
+      Poster und andere visuelle Inhalte an einem Ort erstellen.
+    </p>
+
+    <p>
+      Auch im kostenlosen Canva-Konto stehen KI-Funktionen zur Verfügung,
+      allerdings mit begrenzter Nutzung. Für Anfänger ist das ideal,
+      um herauszufinden, welche Funktionen tatsächlich gebraucht werden.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <small>Gut für</small>
+        Design & Content
+      </div>
+
+      <div class="fact">
+        <small>Kostenlos</small>
+        Teilweise
+      </div>
+
+      <div class="fact">
+        <small>Grenze</small>
+        Begrenzte KI-Nutzung
+      </div>
+    </div>
+
+    <a class="tool-link" href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">
+      Canva ansehen →
+    </a>
+
+  </section>
+
+
+  <section class="tool">
+
+    <div class="tool-number">Tool 06</div>
+
+    <h3>Adobe Firefly – kreative KI für Bilder und mehr</h3>
+
+    <p>
+      Adobe Firefly ist für kreative KI-Aufgaben gedacht.
+      Je nach verfügbaren Funktionen kannst du unter anderem
+      Bilder sowie weitere Medien mit KI erzeugen oder bearbeiten.
+    </p>
+
+    <p>
+      Adobe bietet einen kostenlosen Einstieg mit begrenzten
+      täglichen Generationen. Für intensivere Nutzung gibt es
+      kostenpflichtige Pläne.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <small>Gut für</small>
+        Kreative Inhalte
+      </div>
+
+      <div class="fact">
+        <small>Kostenlos</small>
+        Ja
+      </div>
+
+      <div class="fact">
+        <small>Grenze</small>
+        Begrenzte Generationen
+      </div>
+    </div>
+
+    <a class="tool-link" href="https://firefly.adobe.com/" target="_blank" rel="noopener noreferrer">
+      Adobe Firefly ansehen →
+    </a>
+
+  </section>
+
+
+  <section class="tool">
+
+    <div class="tool-number">Tool 07</div>
+
+    <h3>Gamma – Präsentationen mit KI erstellen</h3>
+
+    <p>
+      Gamma kann aus einer Idee oder Gliederung Präsentationen,
+      Dokumente, einfache Websites und visuelle Inhalte erstellen.
+    </p>
+
+    <p>
+      Der kostenlose Einstieg beinhaltet Starter-Credits.
+      Dadurch kannst du Gamma testen, bevor du dich für einen
+      kostenpflichtigen Tarif entscheidest.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <small>Gut für</small>
+        Präsentationen
+      </div>
+
+      <div class="fact">
+        <small>Kostenlos</small>
+        Ja
+      </div>
+
+      <div class="fact">
+        <small>Grenze</small>
+        Starter-Credits
+      </div>
+    </div>
+
+    <a class="tool-link" href="https://gamma.app/" target="_blank" rel="noopener noreferrer">
+      Gamma ansehen →
+    </a>
+
+  </section>
+
+
+  <section class="tool">
+
+    <div class="tool-number">Tool 08</div>
+
+    <h3>ElevenLabs – KI-Stimmen und Audio</h3>
+
+    <p>
+      ElevenLabs ist auf synthetische Stimmen und Audio spezialisiert.
+      Damit kannst du beispielsweise Text in gesprochene Sprache
+      umwandeln und unterschiedliche Stimmen ausprobieren.
+    </p>
+
+    <p>
+      Der kostenlose Tarif enthält ein begrenztes monatliches
+      Credit-Kontingent und eignet sich daher gut zum Testen.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <small>Gut für</small>
+        Stimme & Audio
+      </div>
+
+      <div class="fact">
+        <small>Kostenlos</small>
+        Ja
+      </div>
+
+      <div class="fact">
+        <small>Grenze</small>
+        Monatliche Credits
+      </div>
+    </div>
+
+    <a class="tool-link" href="https://elevenlabs.io/" target="_blank" rel="noopener noreferrer">
+      ElevenLabs ansehen →
+    </a>
+
+  </section>
+
+
+  <section class="tool">
+
+    <div class="tool-number">Tool 09</div>
+
+    <h3>Notion – Organisation mit KI-Unterstützung</h3>
+
+    <p>
+      Notion eignet sich für Notizen, Wissenssammlungen,
+      Aufgaben, Projekte und persönliche Organisation.
+    </p>
+
+    <p>
+      Der grundlegende Notion-Free-Plan ist kostenlos.
+      Die umfassenderen Notion-AI-Funktionen gehören allerdings
+      zu höheren Tarifen; Nutzer kostenloser beziehungsweise
+      bestimmter niedrigerer Tarife erhalten nur begrenzte
+      AI-Testmöglichkeiten.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <small>Gut für</small>
+        Organisation
+      </div>
+
+      <div class="fact">
+        <small>Kostenlos</small>
+        Basis ja
+      </div>
+
+      <div class="fact">
+        <small>Grenze</small>
+        KI stark eingeschränkt
+      </div>
+    </div>
+
+    <a class="tool-link" href="https://www.notion.com/" target="_blank" rel="noopener noreferrer">
+      Notion ansehen →
+    </a>
+
+  </section>
+
+
+  <section class="tool">
+
+    <div class="tool-number">Tool 10</div>
+
+    <h3>Zapier – wiederkehrende Aufgaben automatisieren</h3>
+
+    <p>
+      Zapier verbindet Apps und lässt sich nutzen, um wiederkehrende
+      Aufgaben automatisch auszuführen. Das kann beispielsweise
+      Datenübertragungen, Benachrichtigungen oder einfache
+      Arbeitsabläufe betreffen.
+    </p>
+
+    <p>
+      Der kostenlose Plan umfasst derzeit ein begrenztes monatliches
+      Task-Kontingent. Damit kannst du einfache Automationen testen,
+      bevor ein größerer Tarif überhaupt notwendig wird.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <small>Gut für</small>
+        Automatisierung
+      </div>
+
+      <div class="fact">
+        <small>Kostenlos</small>
+        Ja
+      </div>
+
+      <div class="fact">
+        <small>Grenze</small>
+        100 Tasks/Monat
+      </div>
+    </div>
+
+    <a class="tool-link" href="https://zapier.com/" target="_blank" rel="noopener noreferrer">
+      Zapier ansehen →
+    </a>
+
+  </section>
+
+
+  <h2>Welches KI-Tool solltest du zuerst ausprobieren?</h2>
+
+  <div class="choice-grid">
+
+    <div class="choice">
+      <strong>Du willst schreiben oder Ideen entwickeln?</strong>
+      Starte mit ChatGPT oder Claude.
+    </div>
+
+    <div class="choice">
+      <strong>Du willst recherchieren?</strong>
+      Probiere Perplexity.
+    </div>
+
+    <div class="choice">
+      <strong>Du willst Designs erstellen?</strong>
+      Canva AI oder Adobe Firefly sind naheliegende Kandidaten.
+    </div>
+
+    <div class="choice">
+      <strong>Du brauchst Präsentationen?</strong>
+      Teste Gamma.
+    </div>
+
+    <div class="choice">
+      <strong>Du möchtest KI-Stimmen?</strong>
+      ElevenLabs ist darauf spezialisiert.
+    </div>
+
+    <div class="choice">
+      <strong>Du möchtest Prozesse automatisieren?</strong>
+      Beschäftige dich mit Zapier.
+    </div>
+
+  </div>
+
+
+  <h2>Brauchst du wirklich zehn KI-Tools?</h2>
+
+  <p>
+    Nein. Für Anfänger ist es meist sinnvoller, mit ein oder zwei
+    Werkzeugen zu beginnen und sie wirklich in den Alltag zu integrieren.
+  </p>
+
+  <p>
+    Ein Tool ist nicht automatisch wertvoll, nur weil es künstliche
+    Intelligenz verwendet. Entscheidend ist, ob es eine konkrete Aufgabe
+    schneller, einfacher oder besser erledigt.
+  </p>
+
+  <div class="tip">
+    <strong>Unsere einfache Regel:</strong>
+    Nutze zuerst einen Allrounder. Ergänze erst dann ein spezialisiertes
+    Werkzeug, wenn du genau weißt, welches Problem damit gelöst werden soll.
+  </div>
+
+
+  <h2>Kostenlos starten – aber Limits beachten</h2>
+
+  <p>
+    Free-Pläne verändern sich regelmäßig. Credits, Nutzungslimits,
+    verfügbare Modelle und enthaltene Funktionen können vom Anbieter
+    jederzeit angepasst werden.
+  </p>
+
+  <p>
+    Prüfe deshalb vor einer intensiveren Nutzung immer die aktuelle
+    Preis- und Funktionsübersicht des jeweiligen Anbieters.
+  </p>
+
+
+  <section class="cta">
+
+    <h2>Du hast genug Tools – aber noch keinen klaren Plan?</h2>
+
+    <p>
+      Mit unserem kostenlosen 7-Tage-Erfolgsplan bringst du Ordnung
+      in deine Ziele und entwickelst konkrete nächste Schritte,
+      statt einfach nur immer neue Tools auszuprobieren.
+    </p>
+
+    <a href="index.html#gratisplan" class="button">
+      7-Tage-Erfolgsplan kostenlos starten →
+    </a>
+
+  </section>
+
+
+  <section class="related">
+
+    <h2>Passend dazu</h2>
+
+    <div class="related-links">
+
+      <a href="beste-ki-tools-fuer-anfaenger.html">
+        Die besten KI-Tools für Anfänger 2026 →
+      </a>
+
+      <a href="ki-digitale-tools.html">
+        KI & digitale Tools →
+      </a>
+
+      <a href="mailerlite-fuer-anfaenger.html">
+        MailerLite für Anfänger →
+      </a>
+
+      <a href="online-geld-verdienen.html">
+        Online Geld verdienen: realistische Möglichkeiten →
+      </a>
+
+      <a href="wissen.html">
+        Zur Wissensübersicht →
+      </a>
+
+    </div>
+
+  </section>
+
+</article>
+</main>
+
+
+<footer>
+  <div class="container footer-inner">
+
+    <div>
+      © 2026 Strategien zum Erfolg
+    </div>
+
+    <div class="footer-links">
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
